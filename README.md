@@ -2,4 +2,4 @@
 
 MTS company ERP
 
-https://abedelrhman-kassem.github.io/MTS/
+https://abedelrhman-kassem.github.io/MTS-multi-pages/
