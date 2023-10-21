@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Products Mass Technology Solutions" />
+
+    <link rel="icon" href="../images/logo.png" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+
+    <!-- EmailJs -->
+    <script
+      type="text/javascript"
+      src="../node_modules/@emailjs/browser/dist/email.min.js"
+    ></script>
+
+    <title>Mass Technology | Products</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md shadow p-0">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"
+            ><img src="../images/logo.png" class="logo-pic" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse justify-content-end navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav gap-2 fw-semibold">
+              <li class="nav-item">
+                <a
+                  class="nav-link home"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active products" href="products.html"
+                  >Products & Solutions</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link clients" href="clients.html">Clients</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link contact" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="products" id="products">
+        <div class="container">
+          <div class="boxs gap-5 mt-5">
+            <div
+              class="box d-flex flex-column justify-content-between py-4 px-sm-4 shadow-lg"
+            >
+              <div class="central d-flex flex-column justify-content-between">
+                <div class="logo-holder fw-bold text-center">
+                  <img src="../images/microsoft-logo.png" alt="" />
+                </div>
+                <div class="info mt-4 pt-4">
+                  <ul class="text-color">
+                    <li>Microsoft Dynamics AX</li>
+                    <li>Microsoft Dynamics BC</li>
+                    <li>Microsoft Dynamics GP</li>
+                    <li>Microsoft Azure</li>
+                    <li>
+                      Microsoft Licensing (Office 365, Power Bi, Visio, etc.)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="box d-flex flex-column justify-content-between p-4 px-sm-4 shadow-lg"
+            >
+              <div class="central d-flex flex-column justify-content-between">
+                <div class="logo-holder odoo-product-logo fw-bold text-center">
+                  <img
+                    style="width: 150px"
+                    src="../images/odoo-logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="info mt-4 pt-4">
+                  <ul class="text-color">
+                    Odoo ERP and software toolkit for business management, for
+                    example: CRM, e-commerce, invoicing, accounting,
+                    manufacturing, warehouse, project management, and inventory
+                    management.
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="box d-flex flex-column justify-content-between p-4 px-sm-4 shadow-lg"
+            >
+              <div class="central d-flex flex-column justify-content-between">
+                <div class="logo-holder fw-bold text-center">
+                  <img src="../images/fortinet-logo.png" alt="" />
+                </div>
+                <div class="info mt-4 pt-4">
+                  <ul class="text-color">
+                    Fortinet delivers high-performance network security
+                    solutions that protect your network, users, and data from
+                    continually evolving threats. Fortinet Ranks 1st in Product
+                    Quality Score. Fortinet has high ranking security and
+                    performance.
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="box d-flex flex-column justify-content-between p-4 px-sm-4 shadow-lg"
+            >
+              <div class="central">
+                <h5 class="fw-bold text-center">MTS Retail System</h5>
+                <div class="info mt-4 pt-4">
+                  <ul class="text-color">
+                    <li>Store management</li>
+                    <li>Stock and cost Management</li>
+                    <li>Purchase Management</li>
+                    <li>
+                      Variant Management which allow users to track items by
+                      color, size, and style
+                    </li>
+                    <li>
+                      Print barcode for items (barcode creation any design)
+                    </li>
+                    <li>Sales personnel tracking</li>
+                    <li>
+                      Promoted sales within the preferred dates and hours.
+                    </li>
+                    <li>Support multi company</li>
+                    <li>Support Multi-store management</li>
+                    <li>Create periodic reports</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="box d-flex flex-column justify-content-between p-4 px-sm-4 shadow-lg"
+            >
+              <div class="central">
+                <h5 class="fw-bold text-center">MTS E-Invoice System</h5>
+                <div class="info mt-4 pt-4">
+                  <ul class="text-color">
+                    <li>
+                      Allows users to manage more than one company from the same
+                      interface.
+                    </li>
+                    <li>
+                      <strong class="d-block">Automation</strong> Customers have
+                      the option to use automation mode to allow <br />
+                      MTS E-Invoice system submitting documents based on
+                      submission schedule.
+                    </li>
+                    <li>
+                      <strong class="d-block">High Availability</strong> MTS
+                      E-invoice tool can be implemented in High Availability
+                      environment where it uses multiple Tokens for the same
+                      company on the same server.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="box d-flex flex-column justify-content-between p-4 px-sm-4 shadow-lg"
+            >
+              <div class="central">
+                <h5 class="fw-bold text-center">MTS E-Receipt System</h5>
+                <div class="info mt-4 pt-4">
+                  <ul class="text-color">
+                    <li>
+                      Allows users to manage more than one company from the same
+                      interface.
+                    </li>
+                    <li>
+                      <strong class="d-block">Automation</strong> Customers have
+                      the option to use automation mode to allow <br />
+                      MTS E-receipt system submitting documents based on
+                      submission schedule.
+                    </li>
+                    <li>
+                      <strong class="d-block">High Availability</strong> MTS
+                      E-receipt tool can be implemented in High Availability
+                      environment where it uses multiple Tokens for the same
+                      company on the same server.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-black py-2">
+      <div class="container">
+        <div class="content row justify-content-evenly">
+          <ul class="col-12 col-md-3 text-white">
+            <li><a class="nav-link" href="../index.html">Home</a></li>
+
+            <li>
+              <a class="nav-link" href="products.html">Products & Solutions</a>
+            </li>
+            <li><a class="nav-link" href="clients.html">Clients</a></li>
+            <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+          <ul class="col-12 col-md-3 text-white">
+            <li>
+              <a class="text-white" href="../index.html#about">About Us</a>
+            </li>
+            <li>
+              <a class="text-white" href="../index.html#partnerships"
+                >PartnerShips</a
+              >
+            </li>
+          </ul>
+
+          <div class="information col-12 col-md-4 text-white">
+            <div class="mb-2 d-flex">
+              <div class="title fw-bold">Address:</div>
+              Building 45,Area 6,South Lotus,5th Settlement, New Cairo, Egypt.
+            </div>
+            <div class="mb-2 d-flex">
+              <div class="title fw-bold">Postal Code:</div>
+              12566
+            </div>
+            <div class="mb-2 d-flex">
+              <div class="title fw-bold">Mobile:</div>
+              (010)18508850 - (010)22558996 - (010)13060239
+            </div>
+
+            <div class="mb-3 d-flex">
+              <div class="title fw-bold">Emails:</div>
+              <div>
+                <div>Sales@masstech.com.eg</div>
+                <div>Support@masstech.com.eg</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p
+          class="copyright m-0 text-center text-white border-top py-3 mt-4"
+        ></p>
+      </div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

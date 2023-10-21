@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/logo.png" />
+    <meta name="description" content="Contact Mass Technology Solutions" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+
+    <!-- EmailJs -->
+    <script
+      type="text/javascript"
+      src="../node_modules/@emailjs/browser/dist/email.min.js"
+    ></script>
+
+    <title>Mass Technology | Contact</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md shadow p-0">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"
+            ><img src="../images/logo.png" class="logo-pic" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse justify-content-end navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav gap-2 fw-semibold">
+              <li class="nav-item">
+                <a
+                  class="nav-link home"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link products" href="products.html"
+                  >Products & Solutions</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link clients" href="clients.html">Clients</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active contact" href="contact.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-outline-success"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/// Modal ///-->
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="content row">
+            <form class="contact-form col-12 col-md-4">
+              <div class="mb-3">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control rounded-3"
+                  id="name"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <div class="text-danger name-required d-none">
+                  Name is Required
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control rounded-3"
+                  id="email"
+                  name="Email"
+                  placeholder="Your Email"
+                  required
+                />
+                <div class="text-danger email-required d-none">
+                  Email is Required
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="number">Phone</label>
+                <input
+                  maxlength="20"
+                  type="text"
+                  class="form-control rounded-3"
+                  id="number"
+                  name="Phone"
+                  placeholder="Your Number"
+                  required
+                />
+                <div class="text-danger phone-required d-none">
+                  Phone is Required
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="message">Message</label>
+                <textarea
+                  type="text"
+                  class="form-control rounded-3"
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+                <div class="text-danger message-required d-none">
+                  Message is Required
+                </div>
+              </div>
+
+              <input id="submit-btn" type="submit" value="Send" />
+            </form>
+            <div class="information col-12 col-md-4 mt-5">
+              <div class="mb-3 d-flex">
+                <strong class="title">Address:</strong>
+                Building 45,Area 6,South Lotus,5th Settlement, New Cairo, Egypt.
+              </div>
+              <div class="mb-3 d-flex">
+                <strong class="title">Postal Code:</strong>
+                12566
+              </div>
+              <div class="mb-3 d-flex">
+                <strong class="title">Mobile:</strong>
+                (010)18508850 – (010)22558996 – (010)13060239
+              </div>
+
+              <div class="mb-3 d-flex">
+                <div class="title fw-bold">Office Hours:</div>
+                <div>
+                  <div>Sunday – Thursday</div>
+                  <div>9am – 5pm</div>
+                </div>
+              </div>
+
+              <div class="mb-3 d-flex">
+                <div class="title fw-bold">Emails:</div>
+                <div>
+                  <div>Sales@masstech.com.eg</div>
+                  <div>Support@masstech.com.eg</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-black py-2">
+      <div class="container">
+        <div class="content row justify-content-evenly">
+          <ul class="col-12 col-md-3 text-white">
+            <li><a class="nav-link" href="../index.html">Home</a></li>
+
+            <li>
+              <a class="nav-link" href="products.html">Products & Solutions</a>
+            </li>
+            <li><a class="nav-link" href="clients.html">Clients</a></li>
+            <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+          <ul class="col-12 col-md-3 text-white">
+            <li>
+              <a class="text-white" href="../index.html#about">About Us</a>
+            </li>
+            <li>
+              <a class="text-white" href="../index.html#partnerships"
+                >PartnerShips</a
+              >
+            </li>
+          </ul>
+
+          <div class="information col-12 col-md-4 text-white">
+            <div class="mb-2 d-flex">
+              <div class="title fw-bold">Address:</div>
+              Building 45,Area 6,South Lotus,5th Settlement, New Cairo, Egypt.
+            </div>
+
+            <div class="mb-2 d-flex">
+              <div class="title fw-bold">Postal Code:</div>
+              12566
+            </div>
+
+            <div class="mb-2 d-flex">
+              <div class="title fw-bold">Mobile:</div>
+              (010)18508850 - (010)22558996 - (010)13060239
+            </div>
+
+            <div class="mb-3 d-flex">
+              <div class="title fw-bold">Emails:</div>
+              <div>
+                <div>Sales@masstech.com.eg</div>
+                <div>Support@masstech.com.eg</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p
+          class="copyright m-0 text-center text-white border-top py-3 mt-4"
+        ></p>
+      </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
