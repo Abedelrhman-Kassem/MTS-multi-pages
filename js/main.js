@@ -3,9 +3,10 @@ copyRight.innerText = `All Rights Reserved © ${new Date().getFullYear()} MTS So
 
 let contactLink = document.querySelector(".contact");
 
+// Contact Form
 if (contactLink.classList.contains("active")) {
   const reciverMail = "Sales@masstech.com.eg";
-  // Contact Form
+
   let submitBtnForm = document.querySelector("#submit-btn");
 
   submitBtnForm.addEventListener("click", (e) => {
