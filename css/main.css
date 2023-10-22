@@ -138,16 +138,30 @@ header .about-box {
 .landing .carousel-item .image-holder img {
   width: 100%;
 }
-.landing .carousel-item .info {
+.landing .carousel-item .info,
+.landing .carousel-item .image-holder {
   opacity: 0;
   transition: 1s;
   -webkit-transition: 1s;
   -moz-transition: 1s;
   -ms-transition: 1s;
   -o-transition: 1s;
+  position: relative;
 }
-.landing .carousel-item.active .info {
+
+.landing .carousel-item .info {
+  top: -100px;
+}
+
+.landing .carousel-item .image-holder {
+  left: -100px;
+}
+
+.landing .carousel-item.active .info,
+.landing .carousel-item.active .image-holder {
   opacity: 1;
+  top: 0;
+  left: 0;
 }
 
 @media (width > 768px) {
@@ -218,17 +232,17 @@ section.clients .image-holder img {
 /* Start about */
 
 section.about h3 {
-  font-size: calc(1rem + 0.6vw) !important;
+  /* font-size: calc(1rem + 0.6vw) !important; */
 }
 
-@media (width > 768px) {
+/* @media (width > 768px) {
   section.about .central {
     width: 63%;
   }
   section.about .side {
     width: 30%;
   }
-}
+} */
 /* End about */
 /* Start partnerships */
 .partnerships .images img {

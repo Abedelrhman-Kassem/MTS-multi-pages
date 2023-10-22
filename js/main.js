@@ -1,7 +1,9 @@
 let copyRight = document.querySelector("footer .copyright");
 copyRight.innerText = `All Rights Reserved © ${new Date().getFullYear()} MTS Solutions.`;
 
-if (location.pathname.split("/")[2].split(".")[0] == "contact") {
+let contactLink = document.querySelector(".contact");
+
+if (contactLink.classList.contains("active")) {
   const reciverMail = "boodykassem16@gmail.com";
   // Contact Form
   let submitBtnForm = document.querySelector("#submit-btn");
