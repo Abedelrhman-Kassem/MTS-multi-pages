@@ -4,7 +4,7 @@ copyRight.innerText = `All Rights Reserved © ${new Date().getFullYear()} MTS So
 let contactLink = document.querySelector(".contact");
 
 if (contactLink.classList.contains("active")) {
-  const reciverMail = "boodykassem16@gmail.com";
+  const reciverMail = "Sales@masstech.com.eg";
   // Contact Form
   let submitBtnForm = document.querySelector("#submit-btn");
 
